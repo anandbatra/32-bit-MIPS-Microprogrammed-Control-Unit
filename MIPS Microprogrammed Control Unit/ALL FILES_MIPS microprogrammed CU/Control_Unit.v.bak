@@ -1,0 +1,68 @@
+module Control_Unit(opcode,funct,cw,clk);
+
+input [5:0] opcode;
+input [5:0] funct;
+input clk;
+
+reg chk;
+
+output [31:0] cw;
+
+wire [31:0] cw;
+
+wire [4:0] dt1_addr;
+wire [4:0] dt2_addr;
+wire [4:0] dt3_addr;
+
+wire [4:0] addr;
+
+reg [2:0] addr_ctrl;
+
+initial begin
+	addr_ctrl = 3'd0;
+	chk = 1'b1;
+end
+
+
+always @(posedge clk)
+begin
+	if(!chk)
+		addr_ctrl = cw[2:0];
+	else
+		chk = 0;
+end
+
+
+DT1 dt1(opcode,funct,dt1_addr);
+DT2 dt2(opcode,funct,dt2_addr);
+DT3 dt3(opcode,funct,dt3_addr);
+
+MUX mux(0,addr,dt1_addr,dt2_addr,dt3_addr,5'b01101,0,0,addr_ctrl,addr);
+
+Control_Memory cm(addr,cw);
+
+
+endmodule
+
+module cu_tb();
+	
+reg [5:0] opcode,funct;
+wire [31:0] cw;
+wire clk;
+
+Clock_Module CLK(clk);
+
+Control_Unit CU(.opcode(opcode),.funct(funct),.cw(cw),.clk(clk));
+
+initial begin
+
+//always@(posedge clk) begin
+opcode = 6'd0; funct = 6'd32;
+#80 $stop;
+opcode = 6'd0; funct = 6'd8;
+#80 $stop;
+// #1 opcode = 6'd0; funct = 6'd16;
+//# $stop;
+end
+
+endmodule

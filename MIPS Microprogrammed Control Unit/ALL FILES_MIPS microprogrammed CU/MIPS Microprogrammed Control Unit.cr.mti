@@ -1,0 +1,50 @@
+{D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/DT3.v} {1 {vlog -work work -vopt -stats=none {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/DT3.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module DT3
+
+Top level modules:
+	DT3
+
+} {} {}} {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/MUX_2x1.v} {1 {vlog -work work -vopt -stats=none {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/MUX_2x1.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module MUX_2x1
+
+Top level modules:
+	MUX_2x1
+
+} {} {}} {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/Control_Memory.v} {1 {vlog -work work -vopt -stats=none {D:\ME_1st_Year\ME_2nd_sem\ACA\MIPS microprogrammed CU\Control_Memory.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Control_Memory
+
+Top level modules:
+	Control_Memory
+
+} {} {}} {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/DT1.v} {1 {vlog -work work -vopt -stats=none {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/DT1.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module DT1
+
+Top level modules:
+	DT1
+
+} {} {}} {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/Clock_Module.v} {1 {vlog -work work -vopt -stats=none {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/Clock_Module.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Clock_Module
+
+Top level modules:
+	Clock_Module
+
+} {} {}} {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/DT2.v} {1 {vlog -work work -vopt -stats=none {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/DT2.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module DT2
+
+Top level modules:
+	DT2
+
+} {} {}} {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/MUX.v} {1 {vlog -work work -vopt -stats=none {D:/ME_1st_Year/ME_2nd_sem/ACA/MIPS microprogrammed CU/MUX.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module MUX
+
+Top level modules:
+	MUX
+
+} {} {}}
